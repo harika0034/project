@@ -1,0 +1,20 @@
+                     User
+                      │
+                      ▼
+              Flask Web Interface
+          (HTML Templates + Static Files)
+                      │
+                      ▼
+                    app.py
+                      │
+          ┌───────────┴───────────┐
+          ▼                             ▼
+   Data Preprocessing             ML Model (.pkl)
+      (Scaler)                     (Prediction)
+          │                              │
+          └───────────┬───────────┘
+                         ▼
+                  Loan Prediction
+                         │
+                         ▼
+                  Result Display
