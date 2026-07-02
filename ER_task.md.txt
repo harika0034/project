@@ -1,0 +1,68 @@
+Entity Relationship (ER) Diagram – Understanding Task
+
+Objective
+
+To understand the concept of an Entity Relationship (ER) Diagram and its importance in database design.
+
+What is an Entity?
+
+An entity is a real-world object or concept about which data is stored in a database.
+
+Examples:
+
+- Student
+- Employee
+- Customer
+- Product
+
+What is an Attribute?
+
+Attributes are the properties or characteristics of an entity.
+
+Example:
+Student:
+
+- Student_ID
+- Name
+- Email
+- Phone Number
+
+What is a Relationship?
+
+A relationship describes how two or more entities are connected.
+
+Example:
+A Student enrolls in a Course.
+
+Types of Relationships
+
+- One-to-One (1:1)
+- One-to-Many (1:M)
+- Many-to-Many (M:N)
+
+Sample ER Diagram Description
+
+Entities:
+
+- Student
+- Course
+
+Relationship:
+
+- Student enrolls in Course.
+
+Attributes:
+
+- Student: Student_ID, Name, Email
+- Course: Course_ID, Course_Name
+
+Importance of ER Diagrams
+
+- Helps design databases effectively.
+- Reduces data redundancy.
+- Improves data organization.
+- Makes database development easier.
+
+Conclusion
+
+This task helped me understand the basic concepts of Entity Relationship Diagrams, including entities, attributes, relationships, and their role in database design.
