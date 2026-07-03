@@ -1,0 +1,15 @@
+# Performing feature scaling using StandardScaler
+sc = StandardScaler()
+
+x_bal = sc.fit_transform(x_bal)
+
+# Converting back to DataFrame
+x_bal = pd.DataFrame(x_bal, columns=names)
+
+
+##Observations:
+.StandardScaler was applied to normalize the feature values.
+.Scaling was performed only on the input features (X), not on the target variable (y).
+.Features are transformed to have a mean close to 0 and a standard deviation close to 1.
+.Scaling helps algorithms such as KNN and Logistic Regression perform better.
+.The scaled data was converted back into a DataFrame for further processing.
