@@ -15,8 +15,3 @@ plt.subplot(122)
 sns.countplot(y=data['Education'])
 plt.show()
 
-# Observations:
-# 1. ApplicantIncome is positively skewed.
-# 2. Credit_History is a binary feature.
-# 3. Male applicants are more frequent.
-# 4. Graduates are more frequent.
