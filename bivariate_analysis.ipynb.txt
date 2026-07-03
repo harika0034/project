@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+#Bivariate analysis helps understand relationships between pairs of variables.
+plt.figure(figsize=(20,5))
+plt.subplot(131)
+sns.countplot(x='Married', hue='Gender', data=data)
+#Most married applicants are male.
+plt.subplot(132)
+sns.countplot(x='Self_Employed', hue='Education', data=data)
+#Graduates are more likely to be employed than non-graduates.
+plt.subplot(133)
+sns.countplot(x='Property_Area', hue='Loan_Amount_Term', data=data)
+#Loan amount term distribution varies across different property areas
+plt.show()
+
+
