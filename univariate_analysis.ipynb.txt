@@ -5,13 +5,16 @@ data = pd.read_csv('Dataset/loan_prediction.csv')
 plt.figure(figsize=(12,5))
 plt.subplot(121)
 sns.histplot(data['ApplicantIncome'], kde=True)
+#ApplicantIncome is positively skewed.
 plt.subplot(122)
 sns.histplot(data['Credit_History'], kde=True)
+#Credit_History is a binary feature.
 plt.show()
 plt.figure(figsize=(12,5))
 plt.subplot(121)
 sns.countplot(y=data['Gender'])
+#Male applicants are more frequent.
 plt.subplot(122)
 sns.countplot(y=data['Education'])
+#Graduates are more frequent
 plt.show()
-
