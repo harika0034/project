@@ -1,0 +1,22 @@
+# importing and building the random forest model
+def RandomForest(X_train, X_test, y_train, y_test):
+    model = RandomForestClassifier()
+    model.fit(X_train, y_train)
+
+    y_tr = model.predict(X_train)
+    print(accuracy_score(y_tr, y_train))
+
+    yPred = model.predict(X_test)
+    print(accuracy_score(yPred, y_test))
+
+# printing the train accuracy and test accuracy respectively
+RandomForest(X_train, X_test, y_train, y_test)
+
+
+## Observations
+
+- A Random Forest Classifier was trained using the training dataset.
+- The model was evaluated on both the training and testing datasets.
+- Training and testing accuracy scores were calculated using accuracy_score().
+- The Random Forest model combines multiple decision trees to improve prediction accuracy and reduce overfitting.
+- The model can be compared with other algorithms to select the best-performing classifier for loan prediction.
