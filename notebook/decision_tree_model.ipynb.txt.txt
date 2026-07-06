@@ -1,0 +1,19 @@
+def decisionTree(X_train, X_test, y_train, y_test):
+    model = DecisionTreeClassifier()
+    model.fit(X_train, y_train)
+
+    y_tr = model.predict(X_train)
+    print(accuracy_score(y_tr, y_train))
+
+    yPred = model.predict(X_test)
+    print(accuracy_score(yPred, y_test))
+
+decisionTree(X_train, X_test, y_train, y_test)
+
+
+Observations
+->A Decision Tree Classifier was trained using the training dataset.
+->The model was evaluated on both the training and testing datasets.
+->Training and testing accuracy scores were printed using accuracy_score().
+->The model predicts loan approval based on the input features.
+->These results help evaluate how well the Decision Tree performs before comparing it with other algorithms.
