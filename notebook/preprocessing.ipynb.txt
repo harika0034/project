@@ -1,1 +1,21 @@
+data['Gender'] = data['Gender'].map({'Female':1, 'Male':0})
+data['Married'] = data['Married'].map({'Yes':1, 'No':0})
+data['Education'] = data['Education'].map({'Graduate':1, 'Not Graduate':0})
+data['Loan_Status'] = data['Loan_Status'].map({'Y':1, 'N':0})
+data['Property_Area'] = data['Property_Area'].map({'Urban':2, 'Semiurban':1, 'Rural':0})
+data.isnull().sum()
+data['Gender'] = data['Gender'].fillna(data['Gender'].mode()[0])
+data['Married'] = data['Married'].fillna(data['Married'].mode()[0])
+data['Self_Employed'] = data['Self_Employed'].fillna(data['Self_Employed'].mode()[0])
+data['Dependents'] = data['Dependents'].fillna(data['Dependents'].mode()[0])
+data['LoanAmount'] = data['LoanAmount'].fillna(data['LoanAmount'].mean())
+data.isnull().sum()
+data.info()
 
+
+## Observations
+- Categorical variables were converted into numerical values using mapping.
+- Missing values were identified using `isnull().sum()`.
+- Missing categorical values were replaced with the mode (most frequent value).
+- Missing numerical values were replaced with the mean.
+- After preprocessing, the dataset contains no missing values and is ready for model building.=
