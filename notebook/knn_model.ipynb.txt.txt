@@ -1,0 +1,21 @@
+# importing and building the KNN model
+def KNN(X_train, X_test, y_train, y_test):
+    model = KNeighborsClassifier()
+    model.fit(X_train, y_train)
+
+    y_tr = model.predict(X_train)
+    print(accuracy_score(y_tr, y_train))
+
+    yPred = model.predict(X_test)
+    print(accuracy_score(yPred, y_test))
+
+# printing the train accuracy and test accuracy respectively
+KNN(X_train, X_test, y_train, y_test)
+
+## Observations
+
+- A K-Nearest Neighbors (KNN) classifier was trained using the training dataset.
+- The model was evaluated on both the training and testing datasets.
+- Training and testing accuracy scores were calculated using `accuracy_score()`.
+- The KNN algorithm predicts loan approval based on the nearest neighboring data points.
+- The model's performance can be compared with other classification algorithms to determine the most accurate predictor.
