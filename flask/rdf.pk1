@@ -1,0 +1,4 @@
+import pickle
+
+pickle.dump(model, open("rdf.pkl", "wb"))
+pickle.dump(scaler, open("scale1.pkl", "wb"))
